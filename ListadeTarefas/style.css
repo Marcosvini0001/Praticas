@@ -1,0 +1,88 @@
+*{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+.lista-de-tarefas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Input-adicionar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    button{
+        background-color: green;
+        border: none;
+        padding: 10px;
+        color: white;
+        font-weight: 600;
+        cursor: pointer;
+        border-radius: 8px;
+        margin: 6px;
+    }
+    button:hover{
+        background-color: rgb(0, 78, 0);
+        border-radius: 8px;
+    }
+    input{
+        padding: 8px;
+        font-size: 14px;
+        border-radius: 8px;
+    }
+}
+
+.div-tarefa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    gap: 16px;
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: bisque;
+    font-weight: 600;
+    button{
+        background-color: rgb(128, 0, 0);
+        border: none;
+        color: white;
+        padding: 10px;
+        font-weight: 600;
+        cursor: pointer;
+        border-radius: 8px;
+        margin: 6px;
+    }
+    button:hover{
+        background-color: rgb(128, 40, 20);
+    }
+    i{
+        cursor: pointer;
+    }
+}
+#concluido{
+    display: none;
+}
+
+
+.span{
+    display: none;
+.span-input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    color: white;
+    gap: 1px;
+    border-radius: 8px;
+    font-weight: 600;
+}}

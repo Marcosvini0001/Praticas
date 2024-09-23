@@ -1,0 +1,95 @@
+span, div, textos... 
+O ChatGPT disse:
+ChatGPT
+O JavaScript tem vários eventos que permitem a manipulação de elementos como button, span, div e outros tipos de conteúdo. Aqui estão alguns dos eventos mais comuns para manipulação desses elementos:
+
+Eventos de Botões (Button)
+click: Disparado quando o botão é clicado.
+
+js
+Copiar código
+button.addEventListener('click', function() {
+  console.log('Botão clicado!');
+});
+dblclick: Disparado quando o botão é clicado duas vezes rapidamente.
+
+js
+Copiar código
+button.addEventListener('dblclick', function() {
+  console.log('Botão clicado duas vezes!');
+});
+mousedown: Disparado quando o botão do mouse é pressionado sobre o botão.
+
+js
+Copiar código
+button.addEventListener('mousedown', function() {
+  console.log('Mouse pressionado no botão!');
+});
+mouseup: Disparado quando o botão do mouse é liberado sobre o botão.
+
+js
+Copiar código
+button.addEventListener('mouseup', function() {
+  console.log('Mouse liberado no botão!');
+});
+Eventos de Texto (span, div, etc.)
+mouseover / mouseout: Detecta quando o mouse passa sobre ou sai de um elemento.
+
+js
+Copiar código
+div.addEventListener('mouseover', function() {
+  console.log('Mouse passou sobre o elemento!');
+});
+
+div.addEventListener('mouseout', function() {
+  console.log('Mouse saiu do elemento!');
+});
+mouseenter / mouseleave: Similar ao mouseover e mouseout, mas não "bubbla" (não se propaga pelos filhos do elemento).
+
+js
+Copiar código
+div.addEventListener('mouseenter', function() {
+  console.log('Mouse entrou no elemento!');
+});
+
+div.addEventListener('mouseleave', function() {
+  console.log('Mouse saiu do elemento!');
+});
+focus / blur: Usado com elementos que podem ser focados (como campos de formulário). focus ocorre quando o elemento recebe foco, e blur ocorre quando o foco é perdido.
+
+js
+Copiar código
+input.addEventListener('focus', function() {
+  console.log('Elemento em foco!');
+});
+
+input.addEventListener('blur', function() {
+  console.log('Elemento perdeu o foco!');
+});
+input: Captura a mudança de valor em um campo de texto em tempo real.
+
+js
+Copiar código
+input.addEventListener('input', function(event) {
+  console.log('Texto digitado: ', event.target.value);
+});
+Eventos Gerais
+change: Detecta quando um valor de um campo de entrada (como um input, select) é alterado e o campo perde o foco.
+
+js
+Copiar código
+select.addEventListener('change', function() {
+  console.log('Valor alterado!');
+});
+keydown / keyup: Detecta quando uma tecla é pressionada ou liberada.
+
+js
+Copiar código
+document.addEventListener('keydown', function(event) {
+  console.log('Tecla pressionada: ', event.key);
+});
+
+document.addEventListener('keyup', function(event) {
+  console.log('Tecla liberada: ', event.key);
+});
+Esses eventos são ideais para manipular interações com elementos no DOM, seja capturando cliques, passando o mouse, ou alterando textos dinamicamente.

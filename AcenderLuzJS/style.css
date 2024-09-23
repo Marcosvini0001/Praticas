@@ -1,0 +1,23 @@
+input{
+    appearance: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    font-weight: 600;
+}
+
+
+input::before{
+    content: 'ON';
+    color: white;
+    background-color: green;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+input:checked::before{
+    content: 'OFF';
+    color: white;
+    background-color: red;
+    padding: 10px 20px;
+    border-radius: 5px;
+}

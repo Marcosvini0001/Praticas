@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Lista de Tarefa</title>
+</head>
+
+<body>
+
+    <div class="lista-de-tarefas">
+        <h1>Lista de Tarefas</h1>
+
+        <div class="Input-adicionar">
+            <input type="text" name="text" id="text" placeholder="Digite sua tarefa">
+            <button id="btn-adicionar">Adicionar</button>
+        </div>
+        <div class="span">
+            <span class="span-input">
+                <p>Por favor, insira uma tarefa!</p>
+            </span>
+        </div>
+
+        <div class="tarefas">
+
+            <div class="div-tarefa">
+                <div>
+                    <i class="fa-regular fa-circle"></i>
+                </div>
+                <div>
+                    <p>Tarefa aqui</p>
+                </div>
+                <div class="btn-deletar">
+                    <button><i class="fa-solid fa-trash-can"></i>Deletar</button>
+                </div>
+            </div>
+
+
+            <div id="concluido" class="div-tarefa">
+                <div>
+                    <i class="fa-solid fa-circle-check"></i>
+                </div>
+                <div>
+                    <p><s>Tarefa aqui</s></p>
+                </div>
+                <div class="btn-deletar">
+                    <button><i class="fa-solid fa-trash-can"></i>Deletar</button>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="lista.js"></script>
+    <script src="https://kit.fontawesome.com/b3b83db5db.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
