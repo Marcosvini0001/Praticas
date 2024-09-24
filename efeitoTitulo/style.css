@@ -1,0 +1,31 @@
+body {
+    background-color: #282c34;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.typing-animation {
+    font-size: 2rem;
+    border-right: 2px solid;
+    width: 22ch; /* largura do texto */
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 4s steps(22), blink 0.75s step-end infinite;
+}
+
+/* Animação de digitação */
+@keyframes typing {
+    from { width: 0; }
+    to { width: 22ch; }
+}
+
+/* Animação do cursor piscando */
+@keyframes blink {
+    from, to { border-color: transparent; }
+    50% { border-color: #fff; }
+}

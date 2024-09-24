@@ -1,8 +1,3 @@
-document.getElementById('btn-adicionar').addEventListener('click', function() {
-    const tarefaTexto = document.getElementById('text').value;
-});
-
-
 document.querySelectorAll('.btn-deletar').forEach(button => {
     button.addEventListener('click', function() {
         this.closest('.div-tarefa').remove();
